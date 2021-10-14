@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .ProductGallery button.image-gallery-icon:hover {
+    color: #ff7d1a !important;
+  }
+
+  .ProductGallery .image-gallery-image {
+    border-radius: 5px !important;
+    margin-bottom: 10px;
+  }
+
+  .ProductGallery .image-gallery-index {
+    border-radius: 5px;
+  }
+
+  .ProductGallery button.image-gallery-thumbnail:hover {
+    border: 4px solid black;
+  }
+  .ProductGallery button.image-gallery-thumbnail.active {
+    border: 4px solid black;
+  }
+
+  .ProductGallery button.image-gallery-thumbnail {
+    border-radius: 5px !important;
+  }
+}
