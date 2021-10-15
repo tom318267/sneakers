@@ -3,6 +3,7 @@ import { Fragment, useState } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { ShoppingCartIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
 import CartDropdown from "./CartDropdown";
+import Link from "next/link";
 
 const navigation = [
   { name: "Collections", href: "#", current: true },
@@ -37,7 +38,11 @@ const Navbar = () => {
               </div>
               <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex-shrink-0 flex items-center">
-                  <h1 className="text-3xl text-black font-bold">sneakers</h1>
+                  <Link href="/">
+                    <h1 className="text-3xl text-black cursor-pointer font-bold">
+                      sneakers
+                    </h1>
+                  </Link>
                 </div>
                 <div className="hidden sm:block sm:ml-6">
                   <div className="flex space-x-4">
