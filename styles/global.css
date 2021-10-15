@@ -3,6 +3,21 @@
 @tailwind utilities;
 
 @layer components {
+  .Home {
+    background: url("/images/sneakers.jpeg");
+    background-size: cover;
+  }
+
+  .Home span {
+    color: #ff7d1a;
+  }
+
+  .Home .overlay {
+    width: 100vw;
+    min-height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
   .ProductGallery button.image-gallery-icon:hover {
     color: #ff7d1a !important;
   }
