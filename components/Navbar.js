@@ -6,7 +6,7 @@ import CartDropdown from "./CartDropdown";
 import Link from "next/link";
 
 const navigation = [
-  { name: "Collections", href: "#", current: true },
+  { name: "Collections", href: "/products", current: true },
   { name: "Men", href: "#", current: false },
   { name: "Women", href: "#", current: false },
   { name: "About", href: "#", current: false },

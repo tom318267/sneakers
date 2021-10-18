@@ -1,10 +1,23 @@
-import { createContext, useState, useEffect } from "react";
-import { useRouter } from "next/router";
+import { createContext, useState } from "react";
 
 const CartContext = createContext();
 
 export const CartProvider = ({ children }) => {
   const [cartItems, setCartItems] = useState([]);
 
-  const addToCart = () => {};
+  const addToCart = (item) => {
+    setCartItems([...cartItems, item]);
+  };
+
+  const removeItemFromCart = (item) => {
+    setCartItems([cartItems.filter((cartItem) => cartItem.id !== item.id)]);
+  };
+
+  return (
+    <CartContext.Provider value={{ addToCart, cartItems, removeItemFromCart }}>
+      {children}
+    </CartContext.Provider>
+  );
 };
+
+export default CartContext;

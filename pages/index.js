@@ -5,7 +5,7 @@ export default function Home() {
     <Layout>
       <div className="Home w-1/8 h-screen">
         <div className="overlay">
-          <div className="flex flex-col w-4/5 mx-auto pt-44 font-bold px-8 justify-center">
+          <div className="flex flex-col w-10/12 mx-auto pt-32 sm:pt-44 font-bold px-8 justify-center">
             <h1 className="text-white text-6xl">
               Go faster, go stronger,{" "}
               <span className="bold-words">never stop.</span>
